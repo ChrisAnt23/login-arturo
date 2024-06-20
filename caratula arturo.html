@@ -1,0 +1,204 @@
+<html>
+<head>
+<body background ="i.JPG">
+
+<center><table border="1" width="1000></center>
+     
+ <tr>
+    <td><center><font face="Helvetica"></font></center></td>
+
+
+    <td><center><input type="date"></center>
+    <br>
+    <br> 
+    <br>
+    <br> 
+    <br>
+    <br> 
+    <br>
+    <br> 
+    <a href="cecytem.HTML"><img src="6.PNG"</td>
+    <a href="mision.HTML"><img src="mision.PNG"</td>
+    <a href="vision.HTML"><img src="vision.PNG"</td>
+    <a href="organigrama.HTML"><img src="organigrama.PNG"</td>
+
+
+     <td><center><font face="Helvetica"><strong> <center><img src="14.PNG" width="600" >
+    <center><font size="5"><strong>
+    
+ <center>  <marquee direction="up"> <img src="7.JPG" width=30" heigth="40"></center></marquee>
+  <center><font size="5">Plantel Ixtlahuaca</center>
+   <center><font size="5">Primer parcial</center> <center><font size="5">Desarrolla Aplicaciones web</center>
+    <center><font size="5"><strong>SUBMODULO I:</strong> Construye páginas web</center>
+  <center><font size="5"><strong>SUBMODULO II:</strong>Desarrolla aplicaciones que se ejecuta en el cliente.</center><center><font size="5"><strong>SUBMODULO III:</strong>Desarrolla aplicaciones que se ejecuta en el desarrollador</center>
+   <center>boton2</center>
+
+    <center><font size="5"><strong>Nombre del Alumno:</strong>Arturo Piña Miranda</center>
+ 
+  <center><font size="5"><strong> Grupo:</strong>404_______________<strong>Turno:</strong>Matutino</center>
+
+
+<center><font size="5"><strong>N.L:</strong>26____________________<strong>Carrera:</strong>Programacion</center><center><img src="9.PNG"width="600"></center>
+
+
+<center><font size="0">Todos los derechos reservados,Elaboradopor:Arturo Piña Miranda,Tel:7121858378,apina9836@gmail.com,Paginaweb:www.caratula.gob.mx se recomienda usargoogle</font size></center></center></td>
+
+
+
+<td><center><font face="Helvetica"><strong><center>
+
+<script type="text/javascript">
+    function greeting()
+{
+   var today = new Date();
+   var hrs = today.getHours();
+   document.writeln("<CENTER>");
+  // document.write("<H1>Buen");
+   if (hrs < 6)
+      document.write("");
+   else if (hrs < 12)
+      document.write("");
+   else if (hrs <= 18)
+      document.write("");
+   else
+      document.write("");
+   document.writeln("</H1>");
+   //document.write("Ingresaste a esta pagina el ");
+   dayStr = today.toLocaleString();
+   //document.write(dayStr);
+   document.writeln("</CENTER>");
+}
+function montharr(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11)
+{
+   this[0] = m0;
+   this[1] = m1;
+   this[2] = m2;
+   this[3] = m3;
+   this[4] = m4;
+   this[5] = m5;
+   this[6] = m6;
+   this[7] = m7;
+   this[8] = m8;
+   this[9] = m9;
+   this[10] = m10;
+   this[11] = m11;
+}
+function calendar()
+{
+   var monthNames = "EneFebMarAbrMayJunJulAgoSepOctNovDic";
+   var today = new Date();
+   var thisDay;
+   var monthDays = new montharr(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+   year = today.getYear() ;
+   thisDay = today.getDate();   
+   if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
+   monthDays[1] = 29;
+   nDays = monthDays[today.getMonth()];
+   firstDay = today;
+   firstDay.setDate(1); // works fine for most systems
+   testMe = firstDay.getDate();
+   if (testMe == 2)
+   firstDay.setDate(0);    
+   startDay = firstDay.getDay();
+   document.writeln("<CENTER>");
+   document.write("<TABLE BORDER>");
+   document.write("<TR><TH COLSPAN=10>");
+   document.write(monthNames.substring(today.getMonth() * 3,
+   (today.getMonth() + 1) * 3));
+   document.write(". ");
+   document.write(year);
+   document.write("<TR><TH>D<TH>L<TH>M<TH>M<TH>J<TH>V<TH>S");
+   document.write("<TR>");
+   column = 0;
+   for (i=0; i<startDay; i++)
+   {
+   document.write("<TD>");
+   column++;
+   }
+   for (i=1; i<=nDays; i++)
+   {
+   document.write("<TD>");
+   if (i == thisDay)
+   document.write("<FONT COLOR=\"#FF0000\"><b>")
+   document.write(i);
+   if (i == thisDay)
+   document.write("</b></FONT>")
+   column++;
+   if (column == 7)
+   {
+   document.write("<TR>"); 
+   column = 0;
+   }
+   }
+   document.write("</TABLE>");
+   document.writeln("</CENTER>");
+}
+   greeting();
+   document.write("</br>");
+   calendar();
+   document.write("");
+   </script> 
+
+
+                        <body>
+                            <h2>Iniciar Sesión</h2>
+                            <form id="loginForm">
+                                <label for="username" onfocus="this.value=''">Usuario:</label><br>
+                                <input type="text" id="username" name="username"><br>
+                                <label for="password" onfocus="this.value=''">Contraseña:</label><br>
+                                <input type="password" id="password" name="password"><br><br>
+                                <button type="submit">Iniciar Sesión</button>
+					   <input type="reset" value="LIMPIAR" onclick="username ,password"()"></br></center>
+
+                            </form>
+                        
+                            <script>
+                                // Datos de usuario
+                                const usuarioCorrecto = "art";
+                                const contraseñaCorrecta = "12345";
+                        
+                                // Función para verificar el inicio de sesión
+                                function verificarInicioSesion(event) {
+                                    event.preventDefault(); // Evita que el formulario se envíe
+                        
+                                    // Obtener los valores de usuario y contraseña
+                                    const usuario = document.getElementById("username").value;
+                                    const contraseña = document.getElementById("password").value;
+                        
+                                    // Verificar la autenticación
+                                    if (usuario === usuarioCorrecto && contraseña === contraseñaCorrecta) {
+                                        alert("Felicidades has iniciado seción");
+                                        // Redirigir al usuario a otra página
+                                        window.location.href = " cecytem.html"; // Cambia "pagina_de_bienvenida.html" por la URL de la página a la que deseas redirigir al usuario
+                                    } else {
+                                        alert("Usuario o contraseña incorrectos.Intentelo nuevamente.");
+                                    }
+                                }
+                        
+                                // Agregar el evento de escucha para el envío del formulario
+                                document.getElementById("loginForm").addEventListener("submit", verificarInicioSesion);
+                            </script>
+                        </body></center>
+
+</body></center>
+</font></center></td>     
+</tr></table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
